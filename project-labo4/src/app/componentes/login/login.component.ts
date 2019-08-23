@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   public usuario: Usuario;
+  public ingresado = false;
 
   constructor() {
     this.usuario = new Usuario();
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
   }
 
   ingresar() {
+    this.ingresado = true;
     console.log(this.usuario);
   }
 }

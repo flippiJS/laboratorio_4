@@ -3,3 +3,8 @@
 <p>Clave</p>
 <input type="text" [(ngModel)]="usuario.clave">
 <button (click)="ingresar()">Ingresar</button>
+
+<div *ngIf="ingresado">
+  <p> {{usuario.nombre}} </p>
+  <p> {{usuario.clave}} </p>
+</div>
